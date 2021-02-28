@@ -1,0 +1,375 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html {
+	background-color: rgba(200,200,200,.95);
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+header h1 {
+	margin-left: 1em;
+	text-align: center;
+}
+
+#header_logo_wrapper {
+	margin: auto;
+	float: left;
+}
+
+#header_logo {
+	width: 100%;
+	max-width: 400px;
+}
+
+nav {
+	flex: 1;
+	text-align: center;
+	padding-top: 2em;
+}
+
+#nav_2 {
+	display: none;
+	flex: 100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#nav_3 {
+	background-color: rgba(200,200,200,.95);
+	position: absolute;
+	width: 200px;
+	text-align: right;
+	padding-top: 50px;
+	left: -200px;
+}
+
+.nav_3 {
+	display: none;	
+}
+
+#nav_3 a {
+	display: block;
+	border-bottom: 1px solid black;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	margin: 0;
+}
+
+#nav_3 a:hover {
+	background-color: rgba(200,200,200,.75);
+}
+
+#menu_close {
+	display: none;
+}
+
+#menu_wrapper {
+	position: absolute;
+	left: 5px;
+	z-index: 1;
+}
+
+@media (max-width: 1667px) {
+	header h1 {
+		margin: auto;
+	}
+	#nav_1 {
+		display: none;
+	}
+	#nav_2 {
+		display: block;
+	}
+}
+
+@media (max-width: 600px) {
+	#nav_2 {
+		display: none;
+	}
+	
+	.nav_3 {
+		display: block;
+	}
+}
+
+@media (max-width: 510px) {
+	#header_logo_wrapper {
+		margin-top: 45px;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+nav a {
+	padding-left:1em;
+	padding-right:1em;
+	margin-bottom: .25em;
+	display: inline-block;
+	color: #0000EE;
+}
+
+#ebay {
+	width: 100px;
+}
+
+#facebook, #instagram, #yelp, #bbb_icon {
+	width: 50px;
+}
+
+#externals {
+	margin: auto;
+	float: right;
+}
+
+nav a:hover {
+	color: rgb(0,0,125);
+}
+
+nav a#active {
+	color: green;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+	text-align: center;
+}
+
+#home #logoImg {
+	width: 100%;
+}
+
+#home #crewImg, #bbb_a_plus {
+	width: 95%;
+}
+
+#bbb_a_plus { 
+	max-width: 300px; 
+	float: right;
+}
+
+@media (max-width: 415px) {
+	#bbb_a_plus {
+		float: none;
+	}
+}
+
+#snippetsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+.snippet {
+	flex: 30%;
+	margin: 1em;
+	padding: 1em;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.snippet p {
+	font-size: 1.5em;
+}
+
+@media (max-width: 600px) {	
+	.snippet {
+		flex: 100%;
+	}
+}
+
+#home .flex_container {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#home .flex_container div {
+	flex: 50%;
+}
+
+#home .info {
+	text-align:left;
+	font-size: 1.25em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+@media (max-width: 1000px){
+	#home .flex_container div {
+		flex: 100%;
+	}
+}
+
+.logo {
+	width: 30%;
+	max-width: 200px;
+	min-width: 123px;
+}
+
+.logo_wrapper {
+	text-align: left;
+	padding-left: 1em;
+}
+
+.reviews_container {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	text-align: left;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.review {
+	flex-basis: 32%;
+    /*max-width: 300px;*/
+	flex-direction: column;	
+}
+
+@media (max-width: 800px) {
+	.review { flex-basis: 100%; }
+}
+
+.stars {
+	background-image: url('imgs/star_unchecked.png');
+    height: 22px;
+    width: 123px;
+	margin-bottom: 1em;
+}
+
+.stars div {
+	background-image: url('imgs/star_checked.png');
+	height: 22px;
+}
+
+.five_stars {
+	width: 123px;
+}
+
+.four_stars {
+	width: 100px;
+}
+
+.three_stars {
+	width: 75px;
+}
+
+.two_stars {
+	width: 50px;
+}
+
+.one_stars {
+	width: 25px;
+}
+
+#autoRepair #aseImg {
+	width: 50%;
+	max-width: 600px;
+	min-width: 300px;
+	float: right;
+	margin-right: 1em;
+}
+
+#aboutUs #crewImg {
+	float: right;
+	width: 50%;
+	padding-left: 1em;
+}
+
+@media (max-width: 600px) {
+	#aboutUs #crewImg {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+}
+
+#aboutUs p {
+	font-size: 1.5em;
+}
+
+#contactUs #flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: left;
+}
+
+#contactUs #flex-container div {
+	padding: 0px 1em 0px 1em;
+}
+
+#contactUs iframe {
+	width: 90%;
+}
+
+#alottaAutoParts img {
+	padding-top: 1em;
+	width: 100%;
+	max-width: 800px;
+}
+
+#alottaAutoParts p {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	text-align: left;
+	text-indent: 1em;
+	padding: 0 1em 0 1em;
+}
+
+#searchInventory iframe {
+	border: 0;
+	width: 100%;
+	max-width: 800px;
+	height: 600px;
+}
+
+#searchByImage iframe {
+	border: 0;
+	width: 100%;
+	max-width: 800px;
+	height: 800px;
+}
+
+#searchMultiple iframe {
+	border: 0;
+	width: 100%;
+	max-width: 840px;
+	height: 890px;
+}
+
+footer {
+	padding: 1em;
+	clear: both;
+}
