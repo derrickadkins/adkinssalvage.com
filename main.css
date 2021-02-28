@@ -15,14 +15,13 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	/*
 	position: fixed;
 	top:0;
 	left:0;
 	width: 100%;
-	background-color: rgb(200,200,200);
-	z-index: 2;
-	*/
+	background-color: rgb(210,210,210);
+	z-index: 1;
+	min-height: 50px;
 }
 
 header hr {
@@ -34,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-main, footer {
+main {
 	max-width: 1200px;
 	margin: auto;
 }
@@ -43,6 +42,7 @@ main, footer {
 	min-height: 100vh;
 }
 
+/* begin nav section*/
 #header_logo_wrapper {
 	margin: auto;
 	float: left;
@@ -51,6 +51,7 @@ main, footer {
 #header_logo {
 	width: 100%;
 	max-width: 400px;
+	min-width: 222px;
 }
 
 a {
@@ -61,7 +62,6 @@ a {
 nav a {
 	padding-left:1em;
 	padding-right:1em;
-	margin-bottom: .25em;
 	display: inline-block;
 }
 
@@ -69,44 +69,54 @@ a:hover {
 	color: rgb(0,0,125);
 }
 
-nav a#active {
-	color: green;
+a#active {
+	/*color: rgb(244,225,64);yellow*/
+	/*text-shadow: 1.5px 1.5px rgb(66,124,73);green*/
+	color: rgb(202,38,44);/*red*/
 }
 
 nav {
 	flex: 1;
 	text-align: center;
+	line-height: 2em;
+}
+
+#nav_wrapper {
+	margin: auto;
+}
+
+.nav_2 {
+	display: none;	
+}
+
+@media (max-width: 812px) {
+	#nav_wrapper {
+		display: none;
+	}
+	
+	.nav_2 {
+		display: block;
+	}
 }
 
 #nav_2 {
-	display: none;
-	flex: 100%;
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
-
-#nav_3 {
-	background-color: rgba(200,200,200,.95);
-	position: absolute;
+	background-color: rgba(210,210,210,.95);
+	position: fixed;
 	width: 200px;
 	text-align: right;
 	padding-top: 50px;
 	left: -200px;
+	top: 0;
 }
 
-.nav_3 {
-	display: none;	
-}
-
-#nav_3 a {
+#nav_2 a {
 	display: block;
-	border-bottom: 1px solid black;
 	padding-top: .5em;
 	padding-bottom: .5em;
 	margin: 0;
 }
 
-#nav_3 a:hover {
+#nav_2 a:hover {
 	background-color: rgba(200,200,200,.75);
 }
 
@@ -114,38 +124,11 @@ nav {
 	display: none;
 }
 
-#menu_wrapper {
-	position: absolute;
+#menu_open, #menu_close {
+	position: fixed;
 	left: 5px;
 	z-index: 1;
-}
-
-@media (max-width: 1530px) {
-	header h1 {
-		margin: auto;
-	}
-	#nav_1 {
-		display: none;
-	}
-	#nav_2 {
-		display: block;
-	}
-}
-
-@media (max-width: 600px) {
-	#nav_2 {
-		display: none;
-	}
-	
-	.nav_3 {
-		display: block;
-	}
-}
-
-@media (max-width: 510px) {
-	#header_logo_wrapper {
-		margin-top: 45px;
-	}
+	cursor: pointer;
 }
 
 #ebay {
@@ -180,7 +163,8 @@ nav {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+/* end nav section*/
+/* begin home section */
 #home #logoImg {
 	width: 100%;
 }
@@ -189,6 +173,14 @@ nav {
 	max-width: 300px;
 	float: right;
 	margin: 1em 0 1em 1em;
+}
+
+@media (max-width: 1000px) {
+	#bbb_a_plus {
+		float: none;
+		display: block;
+		margin: 1em auto 1em auto;
+	}
 }
 
 #snippetsContainer {
@@ -234,6 +226,10 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
 	align-items: center;
+}
+
+#home .flex_container:last-child {
+	padding-bottom: 2em;
 }
 
 #home .flex_container .h_wrapper {
@@ -282,14 +278,6 @@ nav {
 	max-width: 600px;
 }
 
-@media (max-width: 1000px) {
-	#bbb_a_plus {
-		float: none;
-		display: block;
-		margin: 1em auto 1em auto;
-	}
-}
-
 @media (max-width: 900px){
 	#home .flex_container div {
 		flex: 100%;
@@ -334,7 +322,8 @@ nav {
 		display: none;
 	}
 }
-
+/* end home section */
+/* begin reviews section */
 .logo {
 	width: 30%;
 	max-width: 200px;
@@ -357,7 +346,6 @@ nav {
 
 .review {
 	flex-basis: 32%;
-    /*max-width: 300px;*/
 	flex-direction: column;	
 }
 
@@ -396,7 +384,8 @@ nav {
 .one_stars {
 	width: 25px;
 }
-
+/* end reviews section */
+/* begin about us section */
 #crewImg {
 	float: right;
 	width: 50%;
@@ -414,7 +403,8 @@ nav {
 #aboutUs p {
 	font-size: 1.5em;
 }
-
+/* end about us section */
+/* begin contact us section */
 #contactUs .flex_container {
 	display: flex;
 	flex-wrap: wrap;
@@ -436,10 +426,12 @@ iframe {
 	width: 90%;
 	height: 500px;
 }
-
-#careers, #alottaAutoParts, #autoRepair {
+/* end contact us section */
+#careers, #alottaAutoParts, #aboutUs {
 	max-width: 800px;
 	margin: auto;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 #alottaAutoParts img {
@@ -465,17 +457,25 @@ iframe {
 	height: 890px;
 }
 
+/*footer*/
 footer {
 	padding: 1em;
 	clear: both;
+	text-align: center;
+	background-color: rgb(210,210,210);
+	width: 100%;
+}
+
+footer .flex_container {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
-	text-align: center;
+	max-width: 1200px;
+	margin: auto;
 }
 
-footer div {
+footer .flex_container div {
 	flex: 1;
 }
 
@@ -496,7 +496,7 @@ footer li {
 	padding-bottom: 1em;
 }
 
-footer div:first-child {
+footer .flex_container div:first-child {
 	flex: 2;
 }
 
@@ -512,7 +512,7 @@ footer .externals {
 }
 
 @media (max-width: 893px) {
-	footer div:first-child {
+	footer .flex_container div:first-child {
 		flex: 100%;
 		padding-bottom: 1em;
 	}
@@ -527,7 +527,7 @@ footer .externals {
 }
 
 @media (max-width: 555px) {
-	footer div {
+	footer .flex_container div {
 		flex: 100%;
 	}
 	

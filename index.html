@@ -12,27 +12,28 @@
 </head>
 <body><div class="header_main_wrapper">
 	<header>
-		<!-- <h1>Adkins Auto Salvage</h1> -->
 		<div id="header_logo_wrapper">
-			<a href="#">
+			<a href="index.html">
 				<img id="header_logo" src="imgs/header_logo.png" alt="Adkins Auto Salvage" />
 			</a>
 		</div>
-		<nav id="nav_1">
-			<a href="#" id="active">Home</a>
-			<div class="dropdown">
-				<a href="searchInventory.html">Search Inventory</a>
-				<div class="dropdown-content">
-					<a href="searchByImage.html">Search By Image</a>
-					<a href="searchMultiple.html">Search Multiple Parts</a>
+		<div id="nav_wrapper">
+			<nav id="nav_1">
+				<a href="index.html">Home</a>
+				<div class="dropdown">
+					<a href="searchInventory.html">Search Inventory</a>
+					<div class="dropdown-content">
+						<a href="searchByImage.html">Search By Image</a>
+						<a href="searchMultiple.html">Search Multiple Parts</a>
+					</div>
 				</div>
-			</div>
-			<a href="aboutUs.html">About Us</a>
-			<a href="contactUs.html">Contact Us</a>
-			<a href="reviews.html">Reviews</a>
-			<a href="alottaAutoParts.html">Alotta Auto Parts</a>
-			<a href="careers.html">Careers</a>
-		</nav>
+				<a href="aboutUs.html">About Us</a>
+				<a href="contactUs.html">Contact Us</a>
+				<a href="reviews.html">Reviews</a>
+				<a href="alottaAutoParts.html">Alotta Auto Parts</a>
+				<a href="careers.html">Careers</a>
+			</nav>
+		</div>
 		<div class="externals">
 			<a href="https://www.ebay.com/str/adkinsautosalvage" target="_blank" >
 				<img id="ebay" src="imgs/ebay.png" alt="Ebay" />
@@ -50,34 +51,17 @@
 				<img id="bbb_icon" src="imgs/bbb_icon.png" alt="BBB" />
 			</a>
 		</div>
-		<nav id="nav_2">
-			<a href="#" id="active">Home</a>
-			<div class="dropdown">
-				<a href="searchInventory.html">Search Inventory</a>
-				<div class="dropdown-content">
-					<a href="searchByImage.html">Search By Image</a>
-					<a href="searchMultiple.html">Search Multiple Parts</a>
-				</div>
-			</div>
-			<a href="aboutUs.html">About Us</a>
-			<a href="contactUs.html">Contact Us</a>
-			<a href="reviews.html">Reviews</a>
-			<a href="alottaAutoParts.html">Alotta Auto Parts</a>
-			<a href="careers.html">Careers</a>
-		</nav>
-		<a class="nav_3" id="menu_wrapper" href="#">
-			<svg id="menu_open" width="40" height="40" fill="rgb(231,12,42)">
-				<rect y="5" width="40" height="5"></rect>
-				<rect y="20" width="40" height="5"></rect>
-				<rect y="35" width="40" height="5"></rect>
-			</svg>
-			<svg id="menu_close" width="40" height="40" stroke="rgb(0,124,70)" stroke-width="5">
-				<line x1="5" y1="5" x2="35" y2="35" ></line>
-				<line x1="5" y1="35" x2="35" y2="5" ></line>
-			</svg>
-		</a>
-		<nav class="nav_3" id="nav_3">
-			<a href="#" id="active">Home</a>
+		<svg class="nav_2" id="menu_open" width="40" height="40" fill="rgb(231,12,42)">
+			<rect width="40" height="5"></rect>
+			<rect y="15" width="40" height="5"></rect>
+			<rect y="30" width="40" height="5"></rect>
+		</svg>
+		<svg class="nav_2" id="menu_close" width="40" height="40" stroke="rgb(0,124,70)" stroke-width="5">
+			<line x1="5" y1="5" x2="35" y2="35" ></line>
+			<line x1="5" y1="35" x2="35" y2="5" ></line>
+		</svg>
+		<nav class="nav_2" id="nav_2">
+			<a href="index.html">Home</a>
 			<a href="searchInventory.html">Search Inventory</a>
 			<a href="searchByImage.html">Search By Image</a>
 			<a href="searchMultiple.html">Search Multiple Parts</a>
@@ -88,7 +72,6 @@
 			<a href="careers.html">Careers</a>
 		</nav>
 	</header>
-	<hr/>
 	<main id="home">
 		<img id="logoImg" src="imgs/logo.png" alt="Logo" />
 		<div id="snippetsContainer">
@@ -269,10 +252,6 @@
 			<div class="img_wrapper">
 				<img src="imgs/auto_repair.jpg" alt="Auto Repair"/>
 			</div>
-<!--			
-		</div>
-		<div class="flex_container">
--->
 			<div class="ul_wrapper">
 				<ul>
 					<li class="large">Steering &amp; Suspension
@@ -370,59 +349,60 @@
 			</div>
 		</div>
 	</main></div>
-	<hr/>
 	<footer>
-		<div>
-			<a href="index.html">
-				<img id="header_logo" src="imgs/header_logo.png" alt="Adkins Auto Salvage" />
-			</a>
-			<br/><br/>
-			<a href="https://www.google.com/maps/dir//Adkins+Auto+Salvage,+8404+Upper+Miamisburg+Rd,+Miamisburg,+OH+45342/@39.643208,-84.3704569,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x884063748915adcb:0x7e0fdf1c720392ad!2m2!1d-84.3354374!2d39.6431472" target="_blank">
-				8404 Upper Miamisburg Road<br/>
-				Miamisburg, OH 45342
-			</a>
-			<br/><br/>
-			<a href="tel:9378650184">(937) 865-0184</a>
+		<div class="flex_container" >
+			<div>
+				<a href="index.html">
+					<img id="header_logo" src="imgs/header_logo.png" alt="Adkins Auto Salvage" />
+				</a>
+				<br/><br/>
+				<a href="https://www.google.com/maps/dir//Adkins+Auto+Salvage,+8404+Upper+Miamisburg+Rd,+Miamisburg,+OH+45342/@39.643208,-84.3704569,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x884063748915adcb:0x7e0fdf1c720392ad!2m2!1d-84.3354374!2d39.6431472" target="_blank">
+					8404 Upper Miamisburg Road<br/>
+					Miamisburg, OH 45342
+				</a>
+				<br/><br/>
+				<a href="tel:9378650184">(937) 865-0184</a>
+			</div>
+			<div class="sitemap">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutUs.html">About Us</a></li>
+					<li><a href="contactUs.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="sitemap">
+				<ul>
+					<li><a href="reviews.html">Reviews</a></li>
+					<li><a href="alottaAutoParts.html">Alotta Auto Parts</a></li>
+					<li><a href="careers.html">Careers</a></li>
+				</ul>
+			</div>
+			<div class="sitemap">
+				<ul>
+					<li><a href="searchInventory.html">Search Inventory</a></li>
+					<li><a href="searchByImage.html">Search By Image</a></li>
+					<li><a href="searchMultiple.html">Search Multiple Parts</a></li>
+				</ul>
+			</div>		
+			<div class="externals">
+				<a href="https://www.ebay.com/str/adkinsautosalvage" target="_blank" >
+					<img id="ebay" src="imgs/ebay.png" alt="Ebay" />
+				</a>
+				<a href="https://www.facebook.com/adkinsautosalvage" target="_blank" >
+					<img id="facebook" src="imgs/facebook.png" alt="Facebook" />
+				</a>
+				<a href="https://www.instagram.com/explore/locations/133604976406/united-states/miamisburg-ohio/adkins-auto-salvage/" target="_blank" >
+					<img id="instagram" src="imgs/instagram.png" alt="Instagram" />
+				</a>
+				<a href="https://www.yelp.com/biz/adkins-auto-salvage-miamisburg" target="_blank" >
+					<img id="yelp" src="imgs/yelp.png" alt="Yelp" />
+				</a>
+				<a href="https://www.bbb.org/us/oh/miamisburg/profile/auto-salvage/adkins-auto-parts-repairs-0322-21000343" target="_blank" >
+					<img id="bbb_icon" src="imgs/bbb_icon.png" alt="BBB" />
+				</a>
+			</div>
+			<div id="copyright">&copy; 2021 Adkins Auto Salvage</div>
 		</div>
-		<div class="sitemap">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="aboutUs.html">About Us</a></li>
-				<li><a href="contactUs.html">Contact Us</a></li>
-			</ul>
-		</div>
-		<div class="sitemap">
-			<ul>
-				<li><a href="reviews.html">Reviews</a></li>
-				<li><a href="alottaAutoParts.html">Alotta Auto Parts</a></li>
-				<li><a href="careers.html">Careers</a></li>
-			</ul>
-		</div>
-		<div class="sitemap">
-			<ul>
-				<li><a href="searchInventory.html">Search Inventory</a></li>
-				<li><a href="searchByImage.html">Search By Image</a></li>
-				<li><a href="searchMultiple.html">Search Multiple Parts</a></li>
-			</ul>
-		</div>		
-		<div class="externals">
-			<a href="https://www.ebay.com/str/adkinsautosalvage" target="_blank" >
-				<img id="ebay" src="imgs/ebay.png" alt="Ebay" />
-			</a>
-			<a href="https://www.facebook.com/adkinsautosalvage" target="_blank" >
-				<img id="facebook" src="imgs/facebook.png" alt="Facebook" />
-			</a>
-			<a href="https://www.instagram.com/explore/locations/133604976406/united-states/miamisburg-ohio/adkins-auto-salvage/" target="_blank" >
-				<img id="instagram" src="imgs/instagram.png" alt="Instagram" />
-			</a>
-			<a href="https://www.yelp.com/biz/adkins-auto-salvage-miamisburg" target="_blank" >
-				<img id="yelp" src="imgs/yelp.png" alt="Yelp" />
-			</a>
-			<a href="https://www.bbb.org/us/oh/miamisburg/profile/auto-salvage/adkins-auto-parts-repairs-0322-21000343" target="_blank" >
-				<img id="bbb_icon" src="imgs/bbb_icon.png" alt="BBB" />
-			</a>
-		</div>
-		<div id="copyright">&copy; 2021 Adkins Auto Salvage</div>
 	</footer>
 </body>
 </html>
