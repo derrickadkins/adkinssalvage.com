@@ -3,16 +3,17 @@
 	font-family: sans-serif;
 }
 
-html {
-	background-color: rgba(200,200,200,.95);
-}
-
 body {
 	margin: 0;
-	overflow-x: hidden;
+	background-color: rgb(200,200,200);
+	/*
+	background-image: url("imgs/wrenchBg.png"), url("imgs/wrenchGearBg.png");
+	background-attachment: fixed;
+	*/
 }
 
 header {
+	background-color: rgb(210,210,210);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -20,14 +21,8 @@ header {
 	top:0;
 	left:0;
 	width: 100%;
-	background-color: rgb(210,210,210);
 	z-index: 1;
 	min-height: 50px;
-}
-
-header hr {
-	flex: 100%;
-	margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,10 +32,9 @@ h1, h2, h3, h4, h5, h6 {
 main {
 	max-width: 1200px;
 	margin: auto;
-}
-
-.header_main_wrapper {
+	background-color: rgb(200,200,200);
 	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 /* begin nav section*/
@@ -265,7 +259,6 @@ nav {
 	max-width: 600px;
 }
 
-/*
 .img_wrapper {
 	opacity: 0;
 	position: relative;
@@ -305,7 +298,6 @@ nav {
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
-*/
 
 @media (max-width: 900px){
 	#home .flex_container div {
