@@ -44,7 +44,7 @@ $(document).ready(function(){
 	var $nav = $("#nav_wrapper");
 	var $logoImg = $("#header_logo");
 	var $nav2 = $(".nav_2");
-	//var $body = $("body");
+	var $body = $("body");
 	$window.on("scroll resize", function(){
 		ww = $window.width();
 		st = $(document).scrollTop();
@@ -76,13 +76,15 @@ $(document).ready(function(){
 		nh = 0;
 		if(ww > lw+nw+ew){
 			$externals.show();
-			$nav.css({"flex":"1", "order":"0", "display":"block"});
-			$logoImg.css("float", "none");
+			$nav.css({"flex":"1", "display":"block"});
 			$nav2.hide();
+		}else if(ww > lw+nw){
+			$externals.hide();
+			$nav.css({"flex":"1", "display":"block"});
+			$nav2.hide();			
 		}else if(ww > nw){
-			$externals.show();
-			$nav.css({"flex":"100%", "order":"1", "display":"block"});
-			$logoImg.css("float", "left");
+			$externals.hide();
+			$nav.css({"flex":"100%", "display":"block"});
 			$nav2.hide();
 			lh -= 4; //except in this case ???
 			nh = $(".top_lvl").height();
@@ -90,7 +92,6 @@ $(document).ready(function(){
 		else{
 			$externals.hide();
 			$nav.hide();
-			$logoImg.css("float", "none");
 			$nav2.show();
 			$("#menu_close").hide();
 		}
@@ -121,11 +122,9 @@ $(document).ready(function(){
 		}
 		
 		//parallax
-		/*
-		bgPos = "0 " + st/1.25 + "px, 0 " + st/1.75 + "px";
+		bgPos = "0 " + st*-0.25 + "px, 0 " + st*-0.75 + "px";
 		//console.log("bg pos = " + bgPos);
 		$("body").css("background-position", bgPos);
-		*/
 	});
 	
 	$(document).trigger("scroll");
