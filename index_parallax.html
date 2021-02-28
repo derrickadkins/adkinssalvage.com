@@ -5,20 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="Adkins, auto, salvage, parts, used, repair, automotive, car, vehicle">
-	<link rel="stylesheet" href="main.css"/>
+	<link rel="stylesheet" href="main_parallax.css"/>
 	<link rel="icon" href="imgs/icon.png" type="image/png" />
-	<script src="jQuery/jquery-3.5.1.min.js" ></script>
-	<script src="jQuery/main.js" ></script>
 </head>
 <body>
 	<header>
-		<!-- <h1>Adkins Auto Salvage</h1> -->
-		<div id="header_logo_wrapper">
-			<a href="#">
-				<img id="header_logo" src="imgs/header_logo.png" alt="Adkins Auto Salvage" />
-			</a>
-		</div>
-		<nav id="nav_1">
+		<h1>Adkins Auto Salvage</h1>
+		<nav>
 			<a href="#" id="active">Home</a>
 			<div class="dropdown">
 				<a href="searchInventory.html">Search Inventory</a>
@@ -51,49 +44,10 @@
 				<img id="bbb_icon" src="imgs/bbb_icon.png" alt="BBB" />
 			</a>
 		</div>
-		<nav id="nav_2">
-			<a href="#" id="active">Home</a>
-			<div class="dropdown">
-				<a href="searchInventory.html">Search Inventory</a>
-				<div class="dropdown-content">
-					<a href="searchByImage.html">Search By Image</a>
-					<a href="searchMultiple.html">Search Multiple Parts</a>
-				</div>
-			</div>
-			<a href="autoRepair.html">Auto Repair</a>
-			<a href="aboutUs.html">About Us</a>
-			<a href="contactUs.html">Contact Us</a>
-			<a href="reviews.html">Reviews</a>
-			<a href="alottaAutoParts.html">Alotta Auto Parts</a>
-			<a href="careers.html">Careers</a>
-		</nav>
-		<a class="nav_3" id="menu_wrapper" href="#">
-			<svg id="menu_open" width="40" height="40" fill="rgb(231,12,42)">
-				<rect y="5" width="40" height="5"></rect>
-				<rect y="20" width="40" height="5"></rect>
-				<rect y="35" width="40" height="5"></rect>
-			</svg>
-			<svg id="menu_close" width="40" height="40" stroke="rgb(0,124,70)" stroke-width="5">
-				<line x1="5" y1="5" x2="35" y2="35" ></line>
-				<line x1="5" y1="35" x2="35" y2="5" ></line>
-			</svg>
-		</a>
-		<nav class="nav_3" id="nav_3">
-			<a href="#" id="active">Home</a>
-			<a href="searchInventory.html">Search Inventory</a>
-			<a href="searchByImage.html">Search By Image</a>
-			<a href="searchMultiple.html">Search Multiple Parts</a>
-			<a href="autoRepair.html">Auto Repair</a>
-			<a href="aboutUs.html">About Us</a>
-			<a href="contactUs.html">Contact Us</a>
-			<a href="reviews.html">Reviews</a>
-			<a href="alottaAutoParts.html">Alotta Auto Parts</a>
-			<a href="careers.html">Careers</a>
-		</nav>
 	</header>
 	<hr/>
 	<main id="home">
-		<img id="logoImg" src="imgs/logo.png" alt="Logo" />
+		<img id="logoImg" src="imgs/logo.jpg" alt="Logo" />
 		<div id="snippetsContainer">
 			<div class="snippet">
 				<h2>Quality</h2>
@@ -115,22 +69,22 @@
 				</p>
 			</div>
 		</div>
-		<div class="flex_container">
-			<div>
-				<img id="crewImg" src="imgs/thecrew.jpg" alt="The Crew"/>
+		<div class="parallax_container">
+			<div class="parallax_bg">
+				<img id="bbb_a_plus" src="imgs/bbb_a_plus.png" alt="BBB A+" />
 			</div>
-			<div>
+			<div class="parallax_fg">
 				<p class="info">
 					<!--At Adkins Auto Salvage, we provide quality parts at afforadable rates, and with top-notch service.-->
 					Adkins Auto Salvage is a family owned & operated full Service auto salvage yard, Full service automotive repair shop, and we buy vehicles.
 				</p>
-				<img id="bbb_a_plus" src="imgs/bbb_a_plus.png" alt="BBB A+" />
 				<p class="info">
 					Modern day (Junk Yard) auto salvage yard, supplying the world with quality used auto parts. 
 					Our parts are tested, cleaned, and guaranteed. We have a large line of quality NEW parts available 
 					too. We also repair vehicles using our used parts, new parts, or customer supplied parts. We 
 					operate a medium size roll-back tow vehicle and can transport vehicles for you.
 				</p>
+				<img id="crewImg" src="imgs/thecrew.jpg" alt="The Crew"/>
 			</div>
 		</div>
 	</main>

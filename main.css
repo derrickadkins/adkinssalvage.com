@@ -17,8 +17,7 @@ header {
 	align-items: baseline;
 }
 
-header h1 {
-	margin-left: 1em;
+h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
@@ -32,10 +31,30 @@ header h1 {
 	max-width: 400px;
 }
 
+a {
+	text-decoration: none;
+	color: #0000EE;
+}
+
+nav a {
+	padding-left:1em;
+	padding-right:1em;
+	margin-bottom: .25em;
+	display: inline-block;
+}
+
+a:hover {
+	color: rgb(0,0,125);
+}
+
+nav a#active {
+	color: green;
+}
+
 nav {
 	flex: 1;
 	text-align: center;
-	padding-top: 2em;
+	padding-top: 3em;
 }
 
 #nav_2 {
@@ -108,18 +127,6 @@ nav {
 	}
 }
 
-a {
-	text-decoration: none;
-}
-
-nav a {
-	padding-left:1em;
-	padding-right:1em;
-	margin-bottom: .25em;
-	display: inline-block;
-	color: #0000EE;
-}
-
 #ebay {
 	width: 100px;
 }
@@ -133,14 +140,6 @@ nav a {
 	float: right;
 }
 
-nav a:hover {
-	color: rgb(0,0,125);
-}
-
-nav a#active {
-	color: green;
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -150,7 +149,7 @@ nav a#active {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 180px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   text-align: left;
@@ -161,7 +160,8 @@ nav a#active {
 }
 
 main {
-	text-align: center;
+	max-width: 1200px;
+	margin: auto;
 }
 
 #home #logoImg {
@@ -197,8 +197,13 @@ main {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+.snippet h2 {
+	margin: 0;
+}
+
 .snippet p {
 	font-size: 1.5em;
+	margin-bottom: 0;
 }
 
 @media (max-width: 600px) {	
@@ -217,11 +222,12 @@ main {
 	flex: 50%;
 }
 
-#home .info {
+.info {
 	text-align:left;
 	font-size: 1.25em;
 	padding-left: 1em;
 	padding-right: 1em;
+	margin-top: 0;
 }
 
 @media (max-width: 1000px){
@@ -329,41 +335,40 @@ main {
 	padding: 0px 1em 0px 1em;
 }
 
+iframe {
+	display: block;
+	margin: auto;
+	border: 0;
+}
+
 #contactUs iframe {
 	width: 90%;
+	height: 500px;
+}
+
+#careers, #alottaAutoParts, #autoRepair {
+	max-width: 800px;
+	margin: auto;
 }
 
 #alottaAutoParts img {
 	padding-top: 1em;
 	width: 100%;
-	max-width: 800px;
-}
-
-#alottaAutoParts p {
-	width: 100%;
-	max-width: 800px;
-	margin: auto;
-	text-align: left;
-	text-indent: 1em;
-	padding: 0 1em 0 1em;
 }
 
 #searchInventory iframe {
-	border: 0;
 	width: 100%;
 	max-width: 800px;
 	height: 600px;
 }
 
 #searchByImage iframe {
-	border: 0;
 	width: 100%;
 	max-width: 800px;
 	height: 800px;
 }
 
 #searchMultiple iframe {
-	border: 0;
 	width: 100%;
 	max-width: 840px;
 	height: 890px;
