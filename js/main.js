@@ -44,6 +44,7 @@ $(document).ready(function(){
 	var $nav = $("#nav_wrapper");
 	var $logoImg = $("#header_logo");
 	var $nav2 = $(".nav_2");
+	//var $body = $("body");
 	$window.on("scroll resize", function(){
 		ww = $window.width();
 		st = $(document).scrollTop();
@@ -118,6 +119,13 @@ $(document).ready(function(){
 			$logo.width(lw);
 			padd_main(false, hh);
 		}
+		
+		//parallax
+		/*
+		bgPos = "0 " + st/1.25 + "px, 0 " + st/1.75 + "px";
+		//console.log("bg pos = " + bgPos);
+		$("body").css("background-position", bgPos);
+		*/
 	});
 	
 	$(document).trigger("scroll");

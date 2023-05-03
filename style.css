@@ -1,0 +1,178 @@
+/*
+	Website Name: Adkins Auto Salvage - Domestic Car Advanced Site Template
+	Designed by: Katherine Leonard, Car-Part.com
+	Edited by: DESIGNER_NAME
+	Last updated: 31 Mar 2020
+*/
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* "Beat THAT ClearFix!" by Thierry Koblentz - http://www.cssmojo.com/ */
+.btcf:after{content:"";display:table;clear:both}
+
+/* "Frustration Fixes" by Katherine Leonard - http://www.kat-and-mouse.com/ */
+html,body{height:100%;overflow-x:hidden;overflow-y:auto}a{color:inherit}strong,b,bold{font-weight:700}em,i,italic{font-style:italic}.left{float:left;text-align:left}.center{float:none;margin:0auto;text-align:center}.right{float:right;text-align:right}a[href^="tel"],.noU{text-decoration:none}.showU{text-decoration:underline}
+
+html {
+	font-size: 15px;
+}
+
+body {
+	background-color: #1e71b8;
+	background-image: url("graphics/stripes.png");
+	color: #fff;
+	font-family: Roboto, Helvetica, Verdana, sans-serif;
+}
+
+a:hover, a:active {
+	color: #999;
+}
+
+#content {
+	background-color: #fff;
+	color: #333;
+	display: block;
+		height: 100%;
+		width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+}
+header {
+	display: block;
+	padding-top: 40px;
+	position: relative;
+	text-align: center;
+}
+header h1 {
+	color: #1e71b8;
+	display: block;
+	font-family: "Roboto Slab", Rockwell, Garamond, serif;
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-bottom: .25em;
+	text-align: center;
+}
+header #contactInfo {
+	display: inline-block;
+	margin-bottom: 1em;
+	text-align: left;	
+}
+#contactInfo address {
+	display: inline-block;
+		vertical-align: top;
+	margin-right: 40px;
+}
+#contactInfo #phones {
+	display: inline-block;
+		vertical-align: top;
+}
+
+
+nav {
+	background-color: #666;
+	font-family: "Roboto Slab", Rockwell, Garamond, serif;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+nav a {
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	padding: .5em 1em;
+}
+nav a:hover, nav a:active {
+	background-color: #1e71b8;
+	color: #fff;
+}
+nav ul {
+	display: inline;
+}
+nav ul li {
+	display: inline;
+}
+
+
+aside {
+	display: block;
+		width: 410px;
+	float: right;
+	padding: 0 20px;
+	text-align: center;
+}
+aside img {
+	display: block;
+		width: 380px;
+		height: auto;
+	margin: 20px auto;
+}
+main {
+	display: block;
+		width: 500px;
+	padding: 1em 1.25em;
+	text-align: left;
+}
+main p {
+	margin-bottom: 1em;
+}
+main ul {
+	margin-bottom: 1.5em;
+}
+main ul.features {
+	list-style-type: square;
+	margin-left: 5em;
+}
+
+#hours {
+	display: block;
+		width: 250px;
+	margin: 3em auto;
+}
+#hours h1 {
+	border-bottom: 1px solid #666;
+	font-weight: 700;
+	font-size: 1.125em;
+	text-align: center;
+}
+#nydmv {
+	text-align: center;
+}
+ul.pymt {
+	text-align: center;
+}
+ul.pymt li {
+	display: inline-block;
+	padding: 10px 2px;
+}
+ul.pymt .cc {
+	background-size: auto 100%;
+	background-image: url( "graphics/payments.png" );
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	color: rgba( 0,0,0,0 );
+	display: block;
+		width: 3em;
+		height: 2em;
+	font-size: 20px;
+}
+ul.pymt .label {
+	font-size: 0;
+}
+ul.pymt .visa {background-position: 0 0}
+ul.pymt .mc {background-position: -3em 0}
+ul.pymt .disc {background-position: -6em 0}
+ul.pymt .paypal {background-position: -9em 0}
+ul.pymt .amex {background-position: -12em 0}
+ul.pymt .debit {background-position: -15em 0}
+ul.pymt .dc {background-position: -18em 0}
+ul.pymt .bc {background-position: -21em 0}
+ul.pymt .apple {background-position: -24em 0}
+ul.pymt .google {background-position: -27em 0}
+ul.pymt .android {background-position: -30em 0}
+ul.pymt .cash {background-position: -33em 0}
+footer {
+	font-size: .8em;
+	text-align: center;
+}

@@ -1,0 +1,10 @@
+# mail webmaster@car-part.com for constructive criticism
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /private-bin/
+Disallow: /cp-bin/
+Disallow: /logs/
+Disallow: /reports/
+
+User-agent: SemrushBot
+Disallow: /
